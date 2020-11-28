@@ -1,0 +1,6 @@
+﻿create table projeto(
+id int primary key identity(1,1),
+fabricante nvarchar(100),
+modelo nvarchar(100),
+[status] varchar(4) NOT NULL CHECK ([status] IN('ACM', 'HOTM', 'MS','HOTT', 'POFF', 'RFTI'))
+)
